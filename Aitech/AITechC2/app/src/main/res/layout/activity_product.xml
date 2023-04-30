@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Products.ProductActivity">
+
+    <TextView
+        android:id="@+id/nameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/newProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Tìm kiếm sản phẩm"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newProduct"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_edittext_search"
+        android:paddingStart="10dp"
+        app:queryHint="Search..." />
+
+
+    <LinearLayout
+        android:id="@+id/linn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchView"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="Danh mục sản phẩm"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listviewCategory"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:padding="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation_bar"
+        android:layout_below="@+id/linn1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleviewProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp" />
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_700"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/bg_bottom_bar"
+        app:itemTextColor="@drawable/bg_bottom_bar"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu" />
+
+</RelativeLayout>

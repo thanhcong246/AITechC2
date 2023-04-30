@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_background_2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="297dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ll" />
+
+                <ImageView
+                    android:id="@+id/imageView27"
+                    android:layout_width="328dp"
+                    android:layout_height="253dp"
+                    android:layout_marginEnd="56dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView23"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/w" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/la"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="317dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:text="       AITechC2 là một shop bán lẻ về các sản phẩm công nghệ hàng đầu .Chúng tôi cung cấp đa dạng các sản phẩm từ điện thoại thông minh ,máy tính xách tay , máy tính để bàn cho đến các thiết bị gia dụng và phụ kiện công nghệ .Với cam kết chất lượng và dịch vụ tuyệt vưới ,AITechC2 là sự lựa chọn hàng đầu cho những ai tìm kiếm sự tiện lợi và chất lương"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="304dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="  Tầm nhìn của chúng tôi là trở thành một shop bán lẻ công nghệ hàng đầu , mang  đến cho khách hàng những sản phẩm tốt nhất với giá cả phải chăng .Chúng tôi luôn nổ lực để cung cấp những sản phẩm mới nhất , đáp ứng nhu cầu của khách hàng và nâng cao trải nghiệm của họ khi sử dụng sản phẩm công nghệ"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageView12"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="107dp" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lh"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="284dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="     Với phương châm 'Sự hài lòng của khách hàng là trên hết'chúng tôi luôn đặt khách hàng lên hàng đầu và nổ lực để đáp ứng nhu cầu của mọi người.Chúng tôi cam kết cung cấp những sản phẩm chất lượng với giá cả hợp lí và đảm bảo chất lượng tuyệt vời cho khách hàng của chúng tôi."
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="127dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/ki"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="284dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

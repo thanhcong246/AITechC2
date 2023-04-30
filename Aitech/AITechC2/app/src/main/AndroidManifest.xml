@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AITechC"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Payments.PaymentHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Payments.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Products.ProductSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Products.ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Products.ProductByCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Products.ProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Carts.ShippingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Carts.CartActivityHistory"
+            android:exported="false" />
+        <activity
+            android:name=".Carts.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChatBlog.chatwindoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatBlog.BlogChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DevelopingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".weather.WeatherHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".weather.SplashScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".weather.Screen2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".weather.Screen1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPass.ConfirmPassLogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatBot.ChatImgBotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatBot.ChatBotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Blogs.BlogDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Blogs.BlogActivity"
+            android:exported="true" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBYsgMK98CBtfzxt90QwhHB_n748t6ZVq4" />
+
+        <activity
+            android:name=".contact.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".contact.ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.ProfileEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.ProfileShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/productComment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RatingBar
+        android:id="@+id/ratingComment"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:progressTint="#55a8ee"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/v1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Tên:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/ratingComment"
+        app:layout_constraintTop_toBottomOf="@+id/ratingComment" />
+
+    <TextView
+        android:id="@+id/nameComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="userName"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/v1000"
+        app:layout_constraintTop_toBottomOf="@+id/ratingComment" />
+
+    <TextView
+        android:id="@+id/tv1001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:text="Bình luận:"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/ratingComment"
+        app:layout_constraintTop_toBottomOf="@+id/nameComment" />
+
+    <TextView
+        android:id="@+id/textComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="7dp"
+        android:text="Comment"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/tv1001"
+        app:layout_constraintTop_toBottomOf="@+id/nameComment" />
+
+    <TextView
+        android:id="@+id/dateComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:text="2023/4/29"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="14dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textComment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

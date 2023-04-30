@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/idUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleviewProductCart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/tv_cart_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycleviewProductCart"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Tổng:"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/allCostProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycleviewProductCart"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tv_cart_total"
+                android:hint="3.000.000"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+            <View
+                android:id="@+id/spacer"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_cart_total"
+                android:layout_marginTop="5dp"
+                android:background="@color/purple_700" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddToShipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spacer"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_button_product"
+                android:text="Đặt Hàng"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDeleteCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spacer"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_btn_delete"
+                android:backgroundTint="@null"
+                android:padding="10dp"
+                android:text="Xóa Tất Cả"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_700"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/bg_bottom_bar"
+        app:itemTextColor="@drawable/bg_bottom_bar"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu" />
+
+</RelativeLayout>

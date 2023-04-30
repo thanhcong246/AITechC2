@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/tv_order_info_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hóa Đơn Thanh Toán"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text4"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text1"
+                android:text="Tên Khách Hàng :"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/nameUserPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text1"
+                android:layout_toRightOf="@+id/tv_order_info_text4"
+                android:hint="Trí"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text5"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text4"
+                android:text="Địa Chỉ :"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/addressUserPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text4"
+                android:layout_toRightOf="@+id/tv_order_info_text5"
+                android:hint="12 Hải Triều"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text6"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text5"
+                android:text="Số Điện Thoại :"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/phoneUserPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text5"
+                android:layout_toRightOf="@+id/tv_order_info_text5"
+                android:hint="0777838375"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text7"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text6"
+                android:text="Số Sản Phẩm:"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/numberProductPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text6"
+                android:layout_toRightOf="@+id/tv_order_info_text5"
+                android:hint="3"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text8"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text7"
+                android:text="Tổng Tiền :"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/totalCostPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text7"
+                android:layout_toRightOf="@+id/tv_order_info_text6"
+                android:hint="30,000,000 VNĐ"
+                android:textSize="15sp"
+                android:textColor="@color/red">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text9"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text8"
+                android:text="Trạng Thái :"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/statusPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text8"
+                android:layout_toRightOf="@+id/tv_order_info_text7"
+                android:text="Đang Chờ Xác Nhận"
+                android:textSize="15sp"
+                android:textColor="@color/teal_700">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text10"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text9"
+                android:text="Mã đơn hàng :"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/codeCartPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/statusPayment"
+                android:layout_toRightOf="@+id/tv_order_info_text7"
+                android:text="123456"
+                android:textSize="15sp"
+                android:textColor="@color/teal_700">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text11"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text10"
+                android:text="Thanh Toán :"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/cartPayments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/codeCartPayment"
+                android:layout_toRightOf="@+id/tv_order_info_text7"
+                android:text="Trực Tiếp"
+                android:textSize="15sp"
+                android:textColor="@color/teal_700">
+            </TextView>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text10">
+            </View>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewPayment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/btnConfirmPayment"
+                android:layout_below="@+id/tv_order_info_text11">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btnConfirmPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Xác Nhận"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null">
+            </Button>
+
+        </RelativeLayout>
+
+</RelativeLayout>

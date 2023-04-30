@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_edt" />
+    <item
+        android:width="40dp"
+        android:height="40dp"
+        android:gravity="right|center_vertical">
+        <layer-list>
+            <item android:drawable="@drawable/back_icon" />
+        </layer-list>
+    </item>
+</layer-list>

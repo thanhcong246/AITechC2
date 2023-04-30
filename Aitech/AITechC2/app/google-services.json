@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "477464004078",
+    "project_id": "aitechc2-110ea",
+    "storage_bucket": "aitechc2-110ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477464004078:android:6f58eddacf86d7a97dbaff",
+        "android_client_info": {
+          "package_name": "com.vn.tcshop.aitechc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477464004078-97pai0ge3al8iv4utqtqpmnh49ih37j2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClkG96vHLR69FPBzYK13CGsva7a1Pk74Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477464004078-97pai0ge3al8iv4utqtqpmnh49ih37j2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
